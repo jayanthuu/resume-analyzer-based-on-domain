@@ -6,7 +6,7 @@ from flask import Flask, render_template_string, request
 from werkzeug.utils import secure_filename
 
 # Setup Gemini API
-genai.configure(api_key="AIzaSyCnBmlua3cl4Xd56FhskO3s6hwlgGhoGso")  # Replace with your real Gemini API key
+genai.configure(api_key="YOUR_API_KEY")  # Replace with your real Gemini API key
 model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
 
 app = Flask(__name__)
